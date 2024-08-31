@@ -1,0 +1,50 @@
+{
+  "name": "myapp",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "prettier": "^3.1.1",
+    "prettier-plugin-svelte": "^3.1.2",
+    "sass": "^1.71.0",
+    "svelte-check": "^3.6.0",
+    "svelte-language-server": "^0.16.3",
+    "typescript-language-server": "^4.3.3",
+    "vite": "^5.0.3"
+  },
+  "dependencies": {
+    "@sveltejs/kit": "^2.5.1",
+    "@types/axios": "^0.14.0",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lowdb": "^7.0.1",
+    "require": "^0.4.4",
+    "svelte": "^4.2.7",
+    "svelte-routing": "^2.13.0",
+    "typescript": "^5.0.0"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  }
+}
