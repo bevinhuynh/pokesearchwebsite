@@ -3,7 +3,7 @@
   import { capitalize_name, fetch_all_pokemon_names, get_only_name, filter_pokemon} from '../helpers/helpers';
   import type { PokemonDisplay } from '../interfaces/allinterfaces';
   import { goto } from '$app/navigation';
-
+  
   let artwork = "https://img.pokemondb.net/artwork/large/"
   let searchQuery = "";
   let all_pokemons: PokemonDisplay[] = [];
@@ -13,6 +13,7 @@
   let loadingMore = false;
   let limit = 30;
 
+  //Loads 905 Pokemon and some information
   async function fetch_all_pokemon() {
     if (all_pokemons.length == 900) { limit = 5; }
     if (all_pokemons.length == 905) return;
