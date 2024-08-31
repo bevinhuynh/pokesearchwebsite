@@ -11,15 +11,15 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.0.0",
-    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@sveltejs/adapter-auto": "^3.2.4",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "prettier": "^3.1.1",
     "prettier-plugin-svelte": "^3.1.2",
     "sass": "^1.71.0",
     "svelte-check": "^3.6.0",
     "svelte-language-server": "^0.16.3",
     "typescript-language-server": "^4.3.3",
-    "vite": "^5.0.3"
+    "vite": "^5.4.2"
   },
   "dependencies": {
     "@sveltejs/kit": "^2.5.1",
@@ -29,7 +29,8 @@
     "express": "^4.19.2",
     "lowdb": "^7.0.1",
     "require": "^0.4.4",
-    "svelte": "^4.2.7",
+    "svelte": "^4.2.19",
+    "svelte-preprocess": "^6.0.2",
     "svelte-routing": "^2.13.0",
     "typescript": "^5.0.0"
   },
